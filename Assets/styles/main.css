@@ -1,47 +1,111 @@
 *{
-    box-sizing: border-box;
     margin:0;
-    padding:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', Mono;
+    color: aliceblue;
+
 }
 
 body{
     position: relative;
-    font-family: 'Roboto Mono', monospace;
+/*    background-color: black;*/
 }
 
-nav.navbar{
-    position:fixed;
-    background-color: black;
-    color: aliceblue;
+nav{
+    position: static;
     width: 100%;
-    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-
-.logo {
-    float: left;
-    padding: 14px 16px;
-    width: 40vw;
-}
-
-.logo > a > h1 {
-    float: right;
-}
-
-.nav > ul{
-    list-style-type: none;
-    float: right;
-    
-}
-
-li{
-    display: inline;
-    float: left;
-}
-
-li a {
-    display:block;
+/*Logo*/
+.logo a {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
     text-decoration: none;
-    color:white;
-    text-align: center;
-    padding:14px 16px;
+}
+
+.logo a span{
+    color: rgb(255, 193, 7);
+}
+/*Navigation Menu*/
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    margin: 0 10px;
+
+}
+nav ul li a:hover{
+    background-color: rgb(255, 193, 7);
+    color: black; 
+}
+
+.nav-social i{
+    color:aliceblue;
+}
+
+/*Hero*/
+div.hero{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/portfolio/Assets/Image/hi-back.jpg);
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+}
+.hero h1 span{
+    color: rgb(255, 193, 7);
+
+}
+
+.hero p span{
+    color: rgb(255, 193, 7);
+    font-weight: bold;
+}
+
+.hero h1{
+    position:absolute;
+    top: 200px;
+    left: 220px;
+}
+
+.hero p{
+    position:absolute;
+    top: 320px;
+    left: 220px;
+}
+
+button{
+    position: absolute;
+    top: 380px;
+    left: 220px;
+    background-color: rgb(255, 193, 7);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+
+}
+
+button:hover{
+    background-color: aliceblue;
+}
+
+/*About Me*/
+div.about-me{
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(0,0,0.8), rgba(0,0,0.8)), url(/portfolio/Assets/Image/joshua-aragon-FGXqbqbGt5o-unsplash.jpg);
 }
